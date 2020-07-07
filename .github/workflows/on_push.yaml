@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo ::set-env name=SHORT_SHA::$(git rev-parse --short ${{ github.sha }})
       - uses: actions/setup-java@v1
         with:
           java-version: '12.0.2'
@@ -24,5 +23,5 @@ jobs:
       - run: flutter build apk
       - uses: actions/upload-artifact@v2
         with:
-          name: twist_${SHORT_SHA}.apk
+          name: twist_${{ github.sha }}.apk
           path: build/app/outputs/apk/release/app-release.apk
