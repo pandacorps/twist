@@ -1,3 +1,5 @@
+name: on_push
+
 on:
   push:
     branches:
