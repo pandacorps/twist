@@ -22,5 +22,5 @@ jobs:
       - run: flutter build apk
       - uses: actions/upload-artifact@v2
         with:
-          name: twist_${{ github.sha }}.apk
-          path: build/app/outputs/apk/release/app-release.apk
+          name: twist-android
+          path: build/app/outputs/apk/release/
