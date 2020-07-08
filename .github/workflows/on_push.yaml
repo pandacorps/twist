@@ -25,3 +25,8 @@ jobs:
         with:
           name: twist-android
           path: build/app/outputs/apk/release/
+      - run: flutter build web
+      - uses: actions/upload-artifact@v2
+        with:
+          name: twist-web
+          path: build/web/
