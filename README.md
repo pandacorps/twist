@@ -51,6 +51,14 @@ flutter build apk
 
 ## Web
 
+### Setup
+
+Make sure web support is enabled for your flutter installation:
+
+1. flutter channel beta
+1. flutter upgrade
+1. flutter config --enable-web
+
 ### Development
 
 1. Select Chrome as the device
