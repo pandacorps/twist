@@ -15,7 +15,7 @@ Follow the flutter install guide: https://flutter.dev/docs/get-started/install/m
 
 To run tests:
 ```
-flutter test
+$ flutter test
 ```
 
 ## Linting
@@ -24,7 +24,7 @@ Linting uses the [lint](https://pub.dev/packages/lint) package, which is based o
 
 To run linting:
 ```
-flutter analyze
+$ flutter analyze
 ```
 
 ## Android
@@ -38,7 +38,7 @@ flutter analyze
 ### Building
 
 ```
-flutter build apk
+$ flutter build apk
 ```
 
 ## iOS
@@ -55,9 +55,11 @@ flutter build apk
 
 Make sure web support is enabled for your flutter installation:
 
-1. flutter channel beta
-1. flutter upgrade
-1. flutter config --enable-web
+```
+$ flutter channel beta
+$ flutter upgrade
+$ flutter config --enable-web
+```
 
 ### Development
 
@@ -67,5 +69,29 @@ Make sure web support is enabled for your flutter installation:
 ### Building
 
 ```
-flutter build web
+$ flutter build web
+```
+
+## macOS
+
+### Setup
+
+Make sure macOS support is enabled for your flutter installation:
+
+```
+$ flutter channel dev
+$ flutter upgrade
+$ flutter config --enable-macos-desktop
+```
+
+### Development
+
+```
+$ flutter run -d macOS
+```
+
+### Building
+
+```
+$ flutter build macos
 ```
