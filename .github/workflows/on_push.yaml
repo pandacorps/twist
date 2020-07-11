@@ -87,7 +87,7 @@ jobs:
           flutter-version: '1.17.5'
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign
-      - run: zip -r twist-iOS.zip build/macos/ios
+      - run: zip -r twist-iOS.zip build/ios
       - uses: actions/upload-artifact@v2
         with:
           name: twist-iOS

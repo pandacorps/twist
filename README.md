@@ -49,6 +49,11 @@ $ flutter build apk
 1. Select the iOS simulator device through the IDE: https://flutter.dev/docs/get-started/test-drive
 1. Run the app through the IDE
 
+### Building
+```
+flutter build ios --release --no-codesign
+```
+
 ## Web
 
 ### Setup
