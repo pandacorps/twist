@@ -28,10 +28,10 @@ class TwistApp extends StatelessWidget {
         theme: ThemeData.from(
                 colorScheme: colorScheme,
                 textTheme: Theme.of(context).textTheme.merge(const TextTheme(
-                    headline1:
-                        TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                    headline2:
-                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    headline1: TextStyle(
+                        fontSize: 32, fontWeight: FontWeight.bold, height: 1),
+                    headline2: TextStyle(
+                        fontSize: 24, fontWeight: FontWeight.bold, height: 1),
                     bodyText1: TextStyle(fontFamily: 'NotoSans'),
                     bodyText2: TextStyle(fontFamily: 'NotoSans'))))
             .copyWith(
