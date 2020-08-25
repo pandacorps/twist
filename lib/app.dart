@@ -12,7 +12,7 @@ class TwistApp extends StatefulWidget {
 }
 
 class TwistAppState extends State<TwistApp> {
-  final router = Router();
+  final Router router = Router();
   TwistAppState() {
     routes.configureRoutes(router);
   }
