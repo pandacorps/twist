@@ -43,7 +43,7 @@ class ProjectListScreen extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 32),
                   child: RaisedButton(
                     onPressed: () {
-                      // TODO: Navigate to project create.
+                      Navigator.pushNamed(context, '/projects/new');
                     },
                     child: const Text('New Project'),
                   ),
