@@ -18,6 +18,7 @@ jobs:
         with:
           flutter-version: '1.17.5'
       - run: flutter pub get
+      - run: flutter pub run build_runner build 
       - run: flutter analyze
       # - run: flutter test lib
   build-android:
@@ -31,6 +32,7 @@ jobs:
         with:
           flutter-version: '1.17.5'
       - run: flutter pub get
+      - run: flutter pub run build_runner build 
       - run: flutter build apk
       - uses: actions/upload-artifact@v2
         with:
@@ -50,6 +52,7 @@ jobs:
       - run: flutter upgrade
       - run: flutter config --enable-web
       - run: flutter pub get
+      - run: flutter pub run build_runner build 
       - run: flutter build web
       - uses: actions/upload-artifact@v2
         with:
@@ -69,6 +72,7 @@ jobs:
       - run: flutter upgrade
       - run: flutter config --enable-macos-desktop
       - run: flutter pub get
+      - run: flutter pub run build_runner build 
       - run: flutter build macos
       - run: zip -r twist-macOS.zip build/macos/Build/Products
       - uses: actions/upload-artifact@v2
@@ -86,6 +90,7 @@ jobs:
         with:
           flutter-version: '1.17.5'
       - run: flutter pub get
+      - run: flutter pub run build_runner build 
       - run: flutter build ios --release --no-codesign
       - run: zip -r twist-iOS.zip build/ios
       - uses: actions/upload-artifact@v2
